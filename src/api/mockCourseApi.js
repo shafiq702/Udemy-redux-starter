@@ -5,44 +5,28 @@ import delay from './delay';
 // All calls return promises.
 const courses = [
   {
-    id: "react-flux-building-applications",
-    title: "Building Applications in React and Flux",
-    watchHref: "http://www.pluralsight.com/courses/react-flux-building-applications",
-    authorId: "cory-house",
-    length: "5:08",
-    category: "JavaScript"
+    id: "ultimate-pivot-table-mastery-for-excel-2016-on-mac",
+    title: "Ultimate Pivot Table Mastery For Excel 2016",
+    watchHref: "https://www.udemy.com/ultimate-pivot-table-mastery-for-excel-2016-on-mac",
+    authorId: "shafiq-marediya",
+    length: "1:30",
+    category: "Excel"
   },
   {
-    id: "clean-code",
-    title: "Clean Code: Writing Code for Humans",
-    watchHref: "http://www.pluralsight.com/courses/writing-clean-code-humans",
-    authorId: "cory-house",
-    length: "3:10",
-    category: "Software Practices"
-  },
-  {
-    id: "architecture",
-    title: "Architecting Applications for the Real World",
-    watchHref: "http://www.pluralsight.com/courses/architecting-applications-dotnet",
-    authorId: "cory-house",
-    length: "2:52",
-    category: "Software Architecture"
-  },
-  {
-    id: "career-reboot-for-developer-mind",
-    title: "Becoming an Outlier: Reprogramming the Developer Mind",
-    watchHref: "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
-    authorId: "cory-house",
+    id: "data-analysis-course-for-beginners",
+    title: "Complete Data Analysis Course For Beginners",
+    watchHref: "https://www.udemy.com/data-analysis-course-for-beginners",
+    authorId: "shafiq-marediya",
     length: "2:30",
-    category: "Career"
+    category: "Data Analysis"
   },
   {
-    id: "web-components-shadow-dom",
-    title: "Web Component Fundamentals",
-    watchHref: "http://www.pluralsight.com/courses/web-components-shadow-dom",
-    authorId: "cory-house",
-    length: "5:10",
-    category: "HTML5"
+    id: "data-warehouse-modeling-star-schema-design-fundamentals",
+    title: "Data Warehouse Modeling - Star Schema Design Fundamentals",
+    watchHref: "https://www.udemy.com/data-warehouse-modeling-star-schema-design-fundamentals",
+    authorId: "shafiq-marediya",
+    length: "2:30",
+    category: "Data Warehousing"
   }
 ];
 
@@ -82,7 +66,7 @@ class CourseApi {
           //The server would generate ids and watchHref's for new courses in a real app.
           //Cloning so copy returned is passed by value rather than by reference.
           course.id = generateId(course);
-          course.watchHref = `http://www.pluralsight.com/courses/${course.id}`;
+          course.watchHref = `http://www.udemy.com/${course.id}`;
           courses.push(course);
         }
 
